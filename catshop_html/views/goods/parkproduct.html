@@ -3,248 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../assets/css/parkproduct.css" rel="stylesheet" type="">
+    <link href="../../assets/css/header.css" rel="stylesheet" type="">
+    <link href="../../assets/css/reset.css" rel="stylesheet" type="">
     <title>제품 구매 페이지</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f8f8f8;
-        }
-
-        .container {
-            display: flex;
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-        }
-
-        .product-image-section {
-            flex: 0.6;
-            margin-right: 20px;
-        }
-
-        .product-image-section img {
-            width: 100%;
-            height: auto;
-            border: 1px solid #ddd;
-            margin-bottom: 10px;
-        }
-
-        .product-thumbnails {
-            display: flex;
-        }
-
-        .product-thumbnails img {
-            width: 80px;
-            height: auto;
-            margin-right: 10px;
-            border: 1px solid #ddd;
-        }
-
-        .product-details-section {
-            flex: 0.4;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .product-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .rating-and-reviews {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .rating-stars {
-            color: #f5a623;
-            margin-right: 5px;
-        }
-
-        .review-count {
-            color: #666;
-        }
-
-        .product-price {
-            font-size: 24px;
-            color: #e74c3c;
-            margin-bottom: 10px;
-        }
-
-        .original-price {
-            text-decoration: line-through;
-            color: #999;
-            margin-left: 10px;
-            font-size: 18px;
-        }
-
-        .discount-section {
-            margin-bottom: 10px;
-            background-color: #f2f2f2;
-            padding: 10px;
-            color: #555;
-            font-size: 16px;
-        }
-
-        .delivery-info {
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
-
-        .delivery-info strong {
-            color: #333;
-        }
-
-        .quantity-section {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .quantity-section input {
-            width: 50px;
-            text-align: center;
-            margin: 0 10px;
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        .order-total {
-            font-size: 20px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .add-to-cart-button {
-            padding: 15px;
-            background-color: #7c4dff;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 18px;
-            margin-bottom: 20px;
-            width: 100%;
-        }
-
-        .add-to-cart-button:hover {
-            background-color: #5e35b1;
-        }
-
-        .details-toggle {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-            padding: 10px;
-        }
-
-        .details-toggle button {
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .details-toggle button:hover {
-            background-color: #555;
-        }
-
-        .details-content, .reviews-content {
-            display: none;
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-        }
-
-        .review-list {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .review-list li {
-            padding: 10px;
-            background-color: #f9f9f9;
-            margin-bottom: 5px;
-            border: 1px solid #ddd;
-        }
-    </style>
 </head>
 <body>
-
-    <div class="container">
-        <!-- Left Side: Product Image and Thumbnails -->
-        <div class="product-image-section">
-            <img src="https://img.danawa.com/prod_img/500000/063/632/img/1632063_1.jpg?_v=20230817125830" alt="제품 이미지">
-            <div class="product-thumbnails">
-                <img src="https://img.danawa.com/prod_img/500000/063/632/img/1632063_1.jpg?_v=20230817125830" alt="이미지 썸네일 1">
-                <img src="https://img.danawa.com/prod_img/500000/063/632/img/1632063_1.jpg?_v=20230817125830" alt="이미지 썸네일 2">
+    <!-- import header -->
+    <header id ="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="" alt="고양이 로고">
+                <h1>냐옹아 멍멍해봐</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="문자열을 검색하세요!">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="menu">
+                <button>회원가입</button>
+                <button>로그인</button>
             </div>
         </div>
+        <div class="nav-menu">
+            <ul>
+                <li><h2>사료</h2></li>
+                <li><a href="#">성인묘</a></li>
+                <li><a href="#">아가묘</a></li>
+                <li><h2>간식</h2></li>
+                <li><a href="#">캔</a></li>
+                <li><a href="#">츄르</a></li>
+            </ul>
+        </div>
+        <div class="welcome-message">
+            <p></p>
+        </div>
+    </header>
 
-        <!-- Right Side: Product Details -->
+    <div class="container">
+        <div class="product-image-section">
+            <img src="../../assets/images/상품이미지test.jpg" alt="제품 상세 이미지">
+        </div>
+
         <div class="product-details-section">
-            <div class="product-title">하림펫푸드 밤이보약 캣 걱정없는 헤어볼 3.4kg</div>
+            <div class="product-title" name="상품명">하림펫푸드 밤이보약 캣 걱정없는 헤어볼 3.4kg</div>
 
+            <!-- 변경x -->
             <div class="rating-and-reviews">
                 <div class="rating-stars">★★★★★</div>
-                <div class="review-count">(2,624개의 후기)</div>
+                <div class="review-count">(2,62개의 후기)</div>
             </div>
+            <!--------->
 
+            <!-- 가격 -->
             <div class="product-price">
-                29,900원
-                <span class="original-price">39,200원</span>
+                <span class="original-price" name="가격">29,900원</span>
             </div>
+            <!--------->
 
+            <!-- 변경x -->
             <div class="discount-section">
                 <span>24% 할인 (10% 할인 쿠폰 받기)</span>
             </div>
 
             <div class="delivery-info">
-                <strong>무료배송</strong> (30,000원 이상 구매 시) - 오후 5시 이전 주문 시 오늘출발
+                <strong>배송비</strong> (3,000원)<br>
+                오후 5시 이전 주문 시 오늘출발
             </div>
+            <!---------->
 
+
+            <!-- 옵션 -->
             <div class="quantity-section">
                 <label for="quantity">수량:</label>
                 <input type="number" id="quantity" value="1" min="1">
+                <div class="options">
+                    <select>
+                        <option value="option1">무슨무슨맛</option>
+                        <option value="option2">머선머선맛</option>
+                        <option value="option3">모손모손맛</option> 
+                    </select>
+                </div>
             </div>
+            <!---------->
 
-            <div class="order-total">
+            <!-- 총가격 -->
+            <div class="order-total" name="총가격">
                 총 주문 금액: 29,900원
             </div>
+            <!--------->
 
+            <!-- 장바구니 버튼 (장바구니 페이지 링크 추가)-->
             <button class="add-to-cart-button">장바구니에 추가</button>
+            <!--------->
         </div>
     </div>
 
-    <!-- Toggle Buttons for Product Details and Reviews -->
+    
     <div class="details-toggle">
         <button id="toggle-details">제품 상세 이미지 보기</button>
         <button id="toggle-reviews">구매 후기 보기</button>
     </div>
 
-    <!-- Product Details Section -->
+    <!-- 상세 이미지 -->
     <div class="details-content" id="details-content">
-        <img src="//thumbnail8.coupangcdn.com/thumbnails/remote/q89/image/vendor_inventory/bcf7/b81fb030cbbe975281769085ed5d8d55a2ffaf83222a9321b98f5ca856dd.jpg" alt="제품 상세 이미지">
+        <img src="/catshop_html/assets/images/상세p.jpg" alt="제품 상세 이미지">
     </div>
+    <!--------->
 
-    <!-- Reviews Section -->
-    <div class="reviews-content" id="reviews-content">
-        <ul class="review-list">
-            <li>후기 1</li>
-            <li>후기 2</li>
-            <li>후기 3</li>
-        </ul>
-    </div>
+    <div class="review-container">
+        
+        <button class="delete-btn">삭제</button>
+
+        <!-- 리뷰 -->
+        <div class="review-header">
+            <div class="review-info">
+                <span class="stars" name="변경x">★★★★☆</span>
+                <span class="verified" name="변경x">구매인증됨</span>
+                <span class="date" name="등록일">2024.09.05</span><br>
+                <span>이*현 · 코리안 숏헤어 · 2살</span>
+            </div>
+        </div>
+        <!--------->
+
+        <!-- Review Body -->
+        <div class="review-body">
+            <img src="https://via.placeholder.com/100" alt="product-image">
+            <div class="review-text">
+                <strong>재구매</strong><br>
+                잘먹어요, 헤어볼에 도움이 되기를 바래요.
+            </div>
+        </div>
 
     <script>
         // Toggle between product details and reviews
@@ -261,3 +150,4 @@
 
 </body>
 </html>
+

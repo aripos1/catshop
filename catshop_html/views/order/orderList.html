@@ -3,154 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="../../assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/header.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/imorderlist.css" rel="stylesheet" type="text/css">
     <title>주문 목록</title>
-    <style>
-        body {
-            display: flex;
-            font-family: Arial, sans-serif;
-        }
-        .sidebar {
-            width: 200px;
-            padding: 20px;
-            background-color: #f4f4f4;
-            height: 100vh;
-        }
-        .sidebar h2 {
-            margin-bottom: 20px;
-        }
-        .sidebar a {
-            display: block;
-            padding: 10px 0;
-            text-decoration: none;
-            color: #333;
-        }
-        .sidebar a:hover {
-            background-color: #ddd;
-        }
-        .content {
-            flex-grow: 1;
-            padding: 20px;
-        }
-        .search-bar {
-            margin-bottom: 20px;
-        }
-        .search-bar input, .search-bar button {
-            margin-right: 10px;
-            padding: 5px;
-            border: 1px solid #ccc;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-        button {
-            padding: 5px 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+
 </head>
 <body>
+<div id="wrap">
     <header>
-
-    </header>
-    <!-- 왼쪽 사이드바 -->
-    <div class="sidebar">
-        <h2>MYPAGE</h2>
-        <a href="#">주문 목록</a>
-        <a href="#">회원 정보</a>
-    </div>
-
-    <!-- 메인 콘텐츠 영역 -->
-    <div class="content">
-        <h1>주문 목록</h1>
-
-        <!-- 검색창 -->
-        <div class="search-bar">
-            <select id="searchCriteria">
-                <option>목록</option>
-                <option value="productName">상품명으로 검색</option>
-                <option value="productContent">상품내용으로 검색</option>
-            </select>
-            <input type="text" id="searchInput" placeholder="검색어를 입력하세요">
-            <button onclick="search()">검색</button>
+        <div class="header-container">
+            <div class="logo">
+                <img src="" alt="고양이 로고">
+                <h1>냐옹아 멍멍해봐</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="문자열을 검색하세요!">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="menu">
+                <button>회원가입</button>
+                <button>로그인</button>
+            </div>
         </div>
-
-        <!-- 최근 기간 선택 버튼 -->
-        <div class="date-filter">
-            <button >최근 6개월</button>
-            <button >2024</button>
-            <button >2023</button>
-            <button >2022</button>
-        </div>
-
-        <!-- 주문 목록 테이블 -->
-        <table>
-            <thead>
-                <tr>
-                    <th>주문일자</th>
-                    <th colspan="2">상품 정보</th>
-                    <th>배송 상태</th>
-                    <th>상세 보기</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2024-09-01</td>
-                    <td>상품이미지</td>
-                    <td>상품 A<br>옵션: 부들부들푸딩</td>
-                    <td> <a href="https://www.cjlogistics.com/ko/tool/parcel/tracking"> 배송중</a></td>
-                    <td>
-                        <button>물품 수령</button>
-                        <button>리뷰 작성</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2024-08-15</td>
-                    <td>상품이미지</td>
-                    <td>상품 B<br>옵션: 초코맛</td>
-                    <td>배송 완료</td>
-                    <td>
-                        <button>물품 수령</button>
-                        <button>리뷰 작성</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div id="paging">
+   
+        <div class="nav-menu">
             <ul>
-                <li>◀</li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
-                <li>9</li>
-                <li>10</li>
-                <li>▶</li>
+                <li><h2>사료</h2></li>
+                <li><a href="#">성인묘</a></li>
+                <li><a href="#">아가묘</a></li>
+                <li><h2>간식</h2></li>
+                <li><a href="#">캔</a></li>
+                <li><a href="#">츄르</a></li>
             </ul>
         </div>
-        
+        <div class="welcome-message">
+            <p></p>
+        </div>
+    </header>
+
+    <div id="container" class="clearfix">
+        <!-- 왼쪽 사이드바 -->
+        <div class="sidebar">
+            <h2>MYPAGE</h2>
+            <a href="#">주문 목록</a>
+            <a href="#">회원 정보</a>
+        </div>
+
+        <!-- 메인 콘텐츠 영역 -->
+        <div class="content">
+            
+            <h1>주문 목록</h1>
+
+            <!-- 검색창 -->
+            <div class="search-bar">
+                <select id="searchCriteria">
+                    <option>목록</option>
+                    <option value="productName">상품명으로 검색</option>
+                    <option value="productContent">상품내용으로 검색</option>
+                </select>
+                <input type="text" id="searchInput" placeholder="검색어를 입력하세요">
+                <button onclick="search()">검색</button>
+            </div>
+
+            <!-- 최근 기간 선택 버튼 -->
+            <div class="date-filter">
+                <button >최근 6개월</button>
+                <button >2024</button>
+                <button >2023</button>
+                <button >2022</button>
+            </div>
+
+            <!-- 주문 목록 테이블 -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>주문일자</th>
+                        <th colspan="2">상품 정보</th>
+                        <th>배송 상태</th>
+                        <th>상세 보기</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-09-01</td>
+                        <td>상품이미지</td>
+                        <td>상품 A<br>옵션: 부들부들푸딩</td>
+                        <td> <a href="https://www.cjlogistics.com/ko/tool/parcel/tracking"> 배송중</a></td>
+                        <td>
+                            <button>물품 수령</button>
+                            <button>리뷰 작성</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2024-08-15</td>
+                        <td>상품이미지</td>
+                        <td>상품 B<br>옵션: 초코맛</td>
+                        <td>배송 완료</td>
+                        <td>
+                            <button>물품 수령</button>
+                            <button>리뷰 작성</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 주문 목록 테이블 -->
+            <div id="paging">
+                <ul>
+                    <li>◀</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>▶</li>
+                 </ul>
+            </div>
+            
+         </div>
+         <!--content-->
     </div>
-
-
+    <!--container-->
+</div>
+<!--wrap-->
 </body>
 </html>

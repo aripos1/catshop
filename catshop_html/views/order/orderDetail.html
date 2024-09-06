@@ -3,51 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/header.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/imorderdetail.css" rel="stylesheet" type="text/css">
+
     <title>주문상세</title>
 </head>
 <body>
+<div id="wrap">
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="../main/index.html"><img src="../../assets/images/catprofile.jpg" alt="고양이 로고"></a>
+                <img src="" alt="고양이 로고">
                 <h1>냐옹아 멍멍해봐</h1>
             </div>
+            <div class="search">
+                <input type="text" placeholder="문자열을 검색하세요!">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="menu">
+                <button>회원가입</button>
+                <button>로그인</button>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><h2>사료</h2></li>
+                <li><a href="#">성인묘</a></li>
+                <li><a href="#">아가묘</a></li>
+                <li><h2>간식</h2></li>
+                <li><a href="#">캔</a></li>
+                <li><a href="#">츄르</a></li>
+            </ul>
+        </div>
+        <div class="welcome-message">
+            <p></p>
         </div>
     </header>
-    <h1><a href=""> 주문상세 </a></h1>
 
-
+    <div id="container" class="clearfix">
+  
     <!-- 왼쪽 사이드바 -->
-    <div class="sidebar">
-        <h2>MYPAGE</h2>
-        <a href="#">주문 목록</a>
-        <a href="#">회원 정보</a>
+        <div class="sidebar">
+            <h2>MYPAGE</h2>
+            <a href="#">주문 목록</a>
+            <a href="#">회원 정보</a>
+        </div>
+
+        <div class="content">
+            <h1><a href=""> 주문상세 </a></h1>
+            <div class="orderGoods">
+                <h3>2024.7.9 주문</h3>
+            
+                <table>
+                        <tr>
+                            <td><img src="" alt="상품 A 이미지"></td>
+                            <td>상품 A <br> 옵션 : 부들부들푸딩 <br> 9/25일 배송 예정</td>
+                            <td>10,000원</td>
+                            <td>10,000원</td>
+                            <td><button>물품 수령</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="" alt="상품 B 이미지"></td>
+                            <td>상품 B <br> 옵션 : 부들부들푸딩 <br> 9/25일 배송 예정</td>
+                            <td>20,000원</td>
+                            <td>40,000원</td>
+                            <td><button>물품 수령</button></td>
+                        </tr>
+            
+                </table>
+            
+            </div>  
+
+                <!-- 받는 사람 정보-->
+            <div class ="recipient">
+                <h3>받는 사람 정보</h3>
+       
+                <table>
+                    <tr>
+                        <th>받는 사람</th>
+                        <td>임현성</td>
+                    </tr>
+                    <tr>
+                        <th>연락처</th>
+                        <td>01026690799</td>
+                    </tr>
+                    <tr>
+                        <th>주소</th>
+                        <td>(01071) 서울특별시 강북구 한천로139나길 12-111 ( 수유동 )</td>
+                    </tr>
+                </table>
+
+            </div>       
+            <br>
+            <form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>주문금액</th>
+                            <th>할인</th>
+                            <th>배송비</th>
+                            <th>총액</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>50,000원</td>
+                            <td>0원</td>
+                            <td>3,000원</td>
+                            <td>53,000원</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div class="parent-container">
+                    <button class="btn" onclick="history.back()">뒤로가기</button>
+                    <button class="btn" type="submit">물품 전체 수령</button>
+                </div>
+            </form>
+        </div>
+        <!--content-->
     </div>
-
-
-
-
-    <!-- 결제 사이드바 -->
-    <br>
-    <table>
-        <thead>
-            <tr>
-                <th>주문금액</th>
-                <th>할인</th>
-                <th>배송비</th>
-                <th>총액</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>50,000원</td>
-                <td>0원</td>
-                <td>3,000원</td>
-                <td>53,000원</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-
+    <!--container-->
+</div>
+<!--wrap-->
 </body>
 </html>

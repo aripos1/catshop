@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
+@charset "UTF-8";
 
 body {
     background-color: #f4f4f9;
@@ -14,7 +9,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #ffcccb;
-    padding: 10px 20px;
+    padding: 10px 40px;
 }
 
 .logo {
@@ -36,13 +31,15 @@ body {
 .search {
     display: flex;
     align-items: center;
+    width: 250px;
 }
 
 .search input {
-    padding: 5px;
+    padding: 10px;
     font-size: 1rem;
     border: 2px solid #ff7f7f;
     border-radius: 5px;
+    width: 1000px;
 }
 
 .search-btn {
@@ -68,6 +65,9 @@ body {
     margin-left: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 80px;
+    height:30px;
+    font-size: 10px;
 }
 
 .menu button:hover {
@@ -79,7 +79,7 @@ body {
     background-color: #fff;
     padding: 15px;
     border-top: 2px solid #ffcccb;
-    border-bottom: 2px solid #ffcccb;
+    
 }
 
 .nav-menu ul {
@@ -93,15 +93,19 @@ body {
     /* font-size: 1.2rem; */
     color: #ff7f7f;
     margin-bottom: 10px;
+    font-size: 30px;
 }
 
 .nav-menu li a {
     text-decoration: none;
     color: #333;
-    font-size: 1rem;
+    font-size: 20px;
     padding: 5px;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.3s;
+    display: block;
+    padding: 10px
+
 }
 
 .nav-menu li a:hover {

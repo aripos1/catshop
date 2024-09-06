@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제품 등록 페이지</title>
+    <link href="../../assets/css/parkinsert.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/header.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/reset.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header id ="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="" alt="고양이 로고">
+                <h1>냐옹아 멍멍해봐</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="문자열을 검색하세요!">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="menu">
+                <button>회원가입</button>
+                <button>로그인</button>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><h2>사료</h2></li>
+                <li><a href="#">성인묘</a></li>
+                <li><a href="#">아가묘</a></li>
+                <li><h2>간식</h2></li>
+                <li><a href="#">캔</a></li>
+                <li><a href="#">츄르</a></li>
+            </ul>
+        </div>
+        <div class="welcome-message">
+            <p></p>
+        </div>
+    </header>
+
+<div class="container">
+    <!-- Image Preview Section -->
+    <div class="form-group">
+        <label>이미지 미리보기</label>
+        <img id="imagePreview" alt="이미지 미리보기">
+    </div>
+
+    <!-- Product Image Upload -->
+    <div class="form-group">
+        <label for="productImage">상품이미지 등록.</label>
+        <input type="file" id="productImage" accept="image/*" onchange="previewImage('productImage', 'imagePreview')">
+        <button type="button">파일업로드</button>
+    </div>
+
+    <!-- Detail Image Upload -->
+    <div class="form-group">
+        <label for="detailImage">상세이미지 등록</label>
+        <input type="file" id="detailImage" accept="image/*">
+        <button type="button">파일업로드</button>
+    </div>
+
+    <!-- Product Name -->
+    <div class="form-group">
+        <label for="productName">상품명</label>
+        <input type="text" placeholder="상품명">
+    </div>
+
+    <!-- Content -->
+    <div class="form-group">
+        <label for="content">제품설명</label>
+        <input type="text" placeholder="제품설명">
+    </div>
+
+    <!-- Price -->
+    <div class="form-group">
+        <label for="price">가격</label>
+        <input type="text" placeholder="가격">
+    </div>
+
+    <!-- Category Selection -->
+    <div class="form-group category-section">
+        <label for="category">카테고리</label>
+        <select id="category">
+            <option value="성인사료">으른사료</option>
+            <option value="아기사료">아기사료</option>
+            <option value="성인사료">캔</option>
+            <option value="아기사료">츄르</option>
+        </select>
+    </div>
+
+    <!-- Options Section -->
+    <div class="options-section">
+        <label>옵션 텍스트로 입력</label>
+        <div id="optionsContainer">
+            <input type="text" placeholder="옵션 1">
+            <button class="delete-option-btn" onclick="deleteOption(this)">삭제</button><br>
+            <input type="text" placeholder="옵션 2">
+            <button class="delete-option-btn" onclick="deleteOption(this)">삭제</button><br>
+            <input type="text" placeholder="옵션 3">
+            <button class="delete-option-btn" onclick="deleteOption(this)">삭제</button><br>
+        </div>
+        <button class="add-option-btn" onclick="addOption()">옵션 추가</button>
+    </div>
+
+    <!-- Button Group -->
+    <div class="button-group">
+        <button>등록</button>
+        <button class="cancel-btn">취소</button>
+    </div>
+</div>
+
+<script>
+    // Image Preview Function
+    function previewImage(inputId, imgId) {
+        var input = document.getElementById(inputId);
+        var img = document.getElementById(imgId);
+        var file = input.files[0];
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            img.src = e.target.result;
+        };
+
+        if (file) {
+            reader.readAsDataURL(file);
+        }
+    }
+
+    // Add Option Function
+    function addOption() {
+        var container = document.getElementById('optionsContainer');
+        var newOption = document.createElement('div');
+        newOption.innerHTML = '<input type="text" placeholder="옵션 추가"><button class="delete-option-btn" onclick="deleteOption(this)">삭제</button><br>';
+        container.appendChild(newOption);
+    }
+
+    // Delete Option Function
+    function deleteOption(button) {
+        button.parentElement.remove();
+    }
+</script>
+
+</body>
+</html>
