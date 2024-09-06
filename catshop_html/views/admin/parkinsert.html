@@ -4,133 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>제품 등록 페이지</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f8f8f8;
-        }
+    <link href="../../assets/css/parkinsert.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/header.css" rel="stylesheet" type="text/css">
 
-        .container {
-            max-width: 800px;
-            background-color: white;
-            padding: 20px;
-            border: 1px solid #ddd;
-            margin: 20px auto;
-        }
-
-        .form-group {
-            margin-bottom: 15px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        .form-group input[type="text"],
-        .form-group input[type="number"],
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        .form-group input[readonly] {
-            background-color: #f1f1f1;
-            color: #999;
-        }
-
-        .form-group input[type="file"] {
-            display: inline-block;
-            margin-right: 10px;
-        }
-
-        .form-group img {
-            width: 200px;
-            height: 200px;
-            background-color: #ddd;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .category-section, .subcategory-section {
-            margin-top: 10px;
-        }
-
-        .category-section select,
-        .subcategory-section input[type="radio"] {
-            margin-right: 10px;
-        }
-
-        .options-section {
+    <div class="header-container">
+        <div class="logo">
+            <img src="" alt="고양이 로고">
+            <h1>고양아 멍멍해봐</h1>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="문자열로 검색">
+            <button class="search-btn">🔍</button>
+        </div>
+        <div class="menu">
+            <button>회원가입</button>
+            <button>로그인</button>
+        </div>
+    </div>
+    <div class="nav-menu">
+        <ul>
+            <h2>사료</h2>
+            <li><a href="#">성인묘</a></li>
+            <li><a href="#">아가묘</a></li>
             
-            margin-top: 20px;
-        }
-
-        .options-section input[type="text"] {
-            width: calc(100% - 100px);
-            display: inline-block;
-            margin: 8px;
-            padding: 8px;
-        }
-
-        .add-option-btn,
-        .delete-option-btn {
-            padding: 8px 15px;
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            cursor: pointer;
-            margin-right: 5px;
-        }
-
-        .delete-option-btn {
-            background-color: #f44336;
-        }
-
-        .add-option-btn:hover,
-        .delete-option-btn:hover {
-            opacity: 0.8;
-        }
-
-        .button-group {
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .button-group button {
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        .button-group button:hover {
-            background-color: #555;
-        }
-
-        .cancel-btn {
-            background-color: #999;
-        }
-
-        .cancel-btn:hover {
-            background-color: #777;
-        }
-
-        .note {
-            margin-top: 10px;
-            font-size: 14px;
-            color: #777;
-        }
-
-    </style>
+            <h2>간식</h2>
+            <li><a href="#">캔</a></li>
+            <li><a href="#">츄르</a></li>
+        </ul>
+    </div>
+    <div class="welcome-message"><!--여기는 관리자용으로 따로 만들기-->
+        <p></p>
+    </div>
 </head>
 <body>
 
