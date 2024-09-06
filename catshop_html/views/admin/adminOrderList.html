@@ -3,72 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/header.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/imadminorderlist.css" rel="stylesheet" type="text/css">
+
 
     <title>주문관리</title>
-    <style>
-        body {
-            display: flex;
-            font-family: Arial, sans-serif;
-        }
-        .sidebar {
-            width: 200px;
-            padding: 20px;
-            background-color: #f4f4f4;
-            height: 100vh;
-        }
-        .sidebar h2 {
-            margin-bottom: 20px;
-        }
-        .sidebar a {
-            display: block;
-            padding: 10px 0;
-            text-decoration: none;
-            color: #333;
-        }
-        .sidebar a:hover {
-            background-color: #ddd;
-        }
-        .content {
-            flex-grow: 1;
-            padding: 20px;
-        }
-        .search-bar {
-            margin-bottom: 20px;
-        }
-        .search-bar input, .search-bar button {
-            margin-right: 10px;
-            padding: 5px;
-            border: 1px solid #ccc;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-        button {
-            padding: 5px 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    
 </head>
 <body>
     <header>
-
+        <div class="header-container">
+            <div class="logo">
+                <img src="" alt="고양이 로고">
+                <h1>냐옹아 멍멍해봐</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="문자열을 검색하세요!">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="menu">
+                <button>회원가입</button>
+                <button>로그인</button>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><h2>사료</h2></li>
+                <li><a href="#">성인묘</a></li>
+                <li><a href="#">아가묘</a></li>
+                <li><h2>간식</h2></li>
+                <li><a href="#">캔</a></li>
+                <li><a href="#">츄르</a></li>
+            </ul>
+        </div>
+        <div class="welcome-message">
+            <p></p>
+        </div>
     </header>
-
     <!-- 메인 콘텐츠 영역 -->
     <div class="content">
         <h1>주문리스트 관리</h1>
