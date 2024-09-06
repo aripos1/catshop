@@ -6,19 +6,22 @@
     <title>메인 페이지</title> 
     
     <link href="../../assets/css/reset.css" rel="stylesheet">
-    <link  href="../../assets/css/hdrmainpage.css"rel="stylesheet">
+    <link href="../../assets/css/header.css" rel="stylesheet">
+    <link href="../../assets/css/footer.css" rel="stylesheet">
+    <link href="../../assets/css/hdrmainpage.css"rel="stylesheet">
    
 </head>
+<div id="wrap">
 <body>
     <!--헤더 섹션-->
-    <header id="header">
+    <header id ="header">
         <div class="header-container">
             <div class="logo">
-                <img src="/catprofile.jpg" alt="고양이 로고">
+                <img src="" alt="고양이 로고">
                 <h1>냐옹아 멍멍해봐</h1>
             </div>
             <div class="search">
-                <input type="text" placeholder="키워드를 검색해보세요!">
+                <input type="text" placeholder="문자열을 검색하세요!">
                 <button class="search-btn">🔍</button>
             </div>
             <div class="menu">
@@ -28,16 +31,15 @@
         </div>
         <div class="nav-menu">
             <ul>
-                <h2>사료</h2>
+                <li><h2>사료</h2></li>
                 <li><a href="#">성인묘</a></li>
                 <li><a href="#">아가묘</a></li>
-                
-                <h2>간식</h2>
+                <li><h2>간식</h2></li>
                 <li><a href="#">캔</a></li>
                 <li><a href="#">츄르</a></li>
             </ul>
         </div>
-        <div class="welcome-message"><!--여기는 관리자용으로 따로 만들기-->
+        <div class="welcome-message">
             <p></p>
         </div>
     </header>
@@ -76,32 +78,25 @@
         <h2>간식</h2>
         <div class="products">
             <div class="product">
-                <img src="product1.jpg" alt="연한 연어맛">
+                <img src="product1.jpg" alt="간식가정 1">
                 <p>간식 가정 1 10000원</p>
             </div>
             <div class="product">
-                <img src="product2.jpg" alt="고차원적인 고등어 맛">
+                <img src="product2.jpg" alt="간식가정2">
                 <p>간식 가정 2 20000원</p>
             </div>
             <div class="product">
-                <img src="product3.jpg" alt="질나간 고양이 토 다신은 전어">
+                <img src="product3.jpg" alt="간식가정 3">
                 <p>간식 가정 3 30000원</p>
             </div>
             <div class="product">
-                <img src="product3.jpg" alt="질나간 고양이 토 다신은 전어">
+                <img src="product3.jpg" alt="간식가정 4">
                 <p>간식 가정 4 40000원</p>
             </div>
         </div>
     </section>
 
     <!-- 푸터 포함 -->
-    <html lang="ko">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>푸터</title>
-            <link rel="stylesheet" href="/footer.css">
-        </head>
         <footer>
             <div class="footer-container">
                 <div class="footer-logo">
@@ -130,9 +125,9 @@
                 </div>
             </div>
         </footer>
-        </html>
     
-
+    
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
