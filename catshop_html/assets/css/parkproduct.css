@@ -165,6 +165,18 @@ body {
 .details-toggle button:hover {
     background-color: #555;
 }
+.details-content {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 20px;
+    background-color: white;
+}
+.details-content img{
+    width: 100%;
+}
 
 .details-content, .reviews-content {
     display: none;
