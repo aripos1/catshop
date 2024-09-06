@@ -8,6 +8,7 @@
     <link href="../../assets/css/header.css" rel="stylesheet" type="text/css">
     <link href="../../assets/css/reset.css" rel="stylesheet" type="text/css">
 </head>
+<div id="wrap">
 <body>
     <header id ="header">
         <div class="header-container">
@@ -41,24 +42,27 @@
 
 <div class="container">
     <!-- Image Preview Section -->
-    <div class="form-group">
-        <label>이미지 미리보기</label>
-        <img id="imagePreview" alt="이미지 미리보기">
+     <div class="img-container">
+    <div class="form-group-img">
+        <img src="../../assets/images/catprofile.jpg" alt="이미지 미리보기">
     </div>
 
     <!-- Product Image Upload -->
+     <div class="images">
+     <div class="form-img-uprod">
     <div class="form-group">
-        <label for="productImage">상품이미지 등록.</label>
         <input type="file" id="productImage" accept="image/*" onchange="previewImage('productImage', 'imagePreview')">
         <button type="button">파일업로드</button>
     </div>
+     </div>
 
     <!-- Detail Image Upload -->
-    <div class="form-group">
-        <label for="detailImage">상세이미지 등록</label>
+    <div class="form-img-uprod">
         <input type="file" id="detailImage" accept="image/*">
         <button type="button">파일업로드</button>
     </div>
+</div>
+     </div>
 
     <!-- Product Name -->
     <div class="form-group">
@@ -142,4 +146,5 @@
 </script>
 
 </body>
+</div>
 </html>
