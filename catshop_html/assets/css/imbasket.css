@@ -27,7 +27,7 @@
 /* 장바구니 제목 */
 body h1 {
     font-size: 1.5em;
-    margin: 20px 100px;
+    margin: 20px 50px;
     text-align: left;
 }
 
@@ -42,7 +42,7 @@ body h1 a:hover {
 
 /* 테이블 스타일 */
 table {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     border-collapse: collapse;
     background-color: white;
