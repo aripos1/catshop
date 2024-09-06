@@ -17,6 +17,21 @@ header {
     
 }
 
+#joinFormBox label{
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#joinFormBox input{
+    display: block;
+    width: 800px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
 #loginFormBox label {
     display: block;
@@ -33,6 +48,19 @@ header {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+#joinFormBox button{
+    width: 100px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    background-color: #ff7f7f;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    }
+
 
 #loginFormBox button {
     width: 100px;
