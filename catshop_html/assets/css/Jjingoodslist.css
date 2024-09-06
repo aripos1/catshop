@@ -3,7 +3,7 @@
 /* 레이아웃 */
 #wrap{ margin: 0px auto; width: 1000px;}
 #title{ width: 1000px;}
-#content{width: 1000px; }
+#content{width: 100%; }
 #gallery{width: 1000px;}
 #pagingArea{width: 1000px;}
 
@@ -13,7 +13,7 @@
 #wrap #content #title #location #page_name{
     /* display: inline-block; */
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: #ffe2e2;
     font-size: 25px;
     /* background-color: aqua; */
     margin: 10px 0 0 10px;
@@ -37,6 +37,10 @@
 
 }
 
+#gallery{
+    border-bottom: 3px solid #ffe2e2;
+}
+
 /* 이미지1개 영역 */
 #content .view{
     /* background-color: coral; */
@@ -45,6 +49,7 @@
     margin: 5px 0px 10px 40px;
     float: left;
     border: 2px solid #000000;
+    padding-bottom: 5px;
 }
 
 #gallery #viewArea .view .imgItem{
@@ -70,25 +75,29 @@
 
 
 #pagingArea #paging{
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 
 }
 
 #paging ul{
-   background-color: chartreuse;
+   /* background-color: chartreuse; */
     width: 310px;
     margin-left: 345px;
     padding: 20px 0px;
-    padding-left: 30px;
+    padding-left: 37px;
 }
 
 #paging ul>li{
     float: left;
-    
-    margin: 5px;
+    margin: 0px 5px;
+
+    font-size: 15px;
+    font-weight: bolder;
     
 }
 
-#pagingArea #paging .page-move{
-    
+#pagingArea #paging .page_move{
+    font-size: 10px;
+
 }
+

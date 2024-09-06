@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link href="../../assets/css/reset.css" rel="stylesheet" >
+        <link href="../../assets/css/header.css" rel="stylesheet" >
+        <link href="../../assets/css/footer.css" rel="stylesheet" >
+        <link href="../../assets/css/Jjinadmingoodslist.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body>
+        <!--header-->
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <img src="" alt="고양이 로고">
+                    <h1>냐옹아 멍멍해봐</h1>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="문자열을 검색하세요!">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <div class="menu">
+                    <button>회원가입</button>
+                    <button>로그인</button>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><h2>사료</h2></li>
+                    <li><a href="#">성인묘</a></li>
+                    <li><a href="#">아가묘</a></li>
+                    <li><h2>간식</h2></li>
+                    <li><a href="#">캔</a></li>
+                    <li><a href="#">츄르</a></li>
+                </ul>
+            </div>
+            <div class="welcome-message">
+                <p></p>
+            </div>
+        </header>
+        <!--/header-->
+
+        <div id="wrap">
+            <div id="content">
+                <div id="sub_title">
+                    <div id="name_title" class="clearfix">
+                        <h1 id="goodslist"> 상품관리 리스트 </h1>
+                    </div>
+
+                    <form action="" method="">
+                        <div id="form-group" class="clearfix">
+                            
+                            <div id="serch_text">
+                                <input type="text" name="keyword" value="">
+                                <button type="submit" id="btn-search"> 검색 </button>
+                            </div>
+
+                            <select id="search_menu">
+                                <option>카테고리</option>
+                                <option value="goodsName">사료-adult</option>
+                                <option value="goodsContent">사료-kitten</option>
+                                <option value="userId">간식류-can</option>
+                                <option value="userName">간식류-churr</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div id="list-table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 80px" >
+                            <col style="width: 100px">
+                            <col style="width: 130px">
+                            <col style="width: 150px">
+                            <col style="width: 340px">
+                            <col style="width: 100px">
+                        </colgroup> 
+                            <thead>
+                                <tr>
+                                    <th> 번호 </th>
+                                    <th> 카테고리 </th>
+                                    <th> 상품이름 </th>
+                                    <th> 등록날짜 </th>
+                                    <th> 글제목 </th>
+                                    <th> 상품가격 </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> 1 </td>
+                                    <td> 츄르 </td>
+                                    <td> 하림츄르 </td>
+                                    <td> 2024-09-06 </td>
+                                    <td> 맛있는 츄류류륩 </td>
+                                    <td> 3,000 </td>
+                                    <td><a><button type="submit" id="btn-delete"> 삭제 </button></a> </td>
+                                </tr>
+                                <tr>
+                                    <td> 1 </td>
+                                    <td> 츄르 </td>
+                                    <td> 하림츄르 </td>
+                                    <td> 2024-09-06 </td>
+                                    <td> 맛있는 츄류류륩 </td>
+                                    <td> 3,000 </td>
+                                    <td><a><button type="submit" id="btn-delete"> 삭제 </button></a> </td>
+                                </tr>
+                                <tr>
+                                    <td> 1 </td>
+                                    <td> 츄르 </td>
+                                    <td> 하림츄르 </td>
+                                    <td> 2024-09-06 </td>
+                                    <td> 맛있는 츄류류륩 </td>
+                                    <td> 3,000 </td>
+                                    <td><a><button type="submit" id="btn-delete"> 삭제 </button></a> </td>
+                                </tr>
+                                <tr>
+                                    <td> 1 </td>
+                                    <td> 츄르 </td>
+                                    <td> 하림츄르 </td>
+                                    <td> 2024-09-06 </td>
+                                    <td> 맛있는 츄류류륩 </td>
+                                    <td> 3,000 </td>
+                                    <td><a><button type="submit" id="btn-delete"> 삭제 </button></a> </td>
+                                </tr>
+                            </tbody>
+                    </table>
+                </div>
+                
+                
+                <!--페이징 부분-->
+                <div id="pagingArea">    
+                    <div id="paging">
+                        <ul class="clearfix">
+                            <li class="page_move">◀</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li class="page_move">▶</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /페이징 부분-->
+                
+            
+            </div>
+            <!--/content-->
+
+            <!--footer-->
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img src="/catprofile.jpg" alt="고양이 로고">
+                    </div>
+                    <div class="footer-info">
+                        <p>
+                            (주)냐옹아 멍멍해봐 | 대표이사: 김덕배<br>
+                            서울시 강남대로 40번지 통영빌딩 32층<br>
+                            사업자 등록번호: 887-87-00578<br>
+                            통신판매업 신고: 2017-서울특별시-00808호<br>
+                            이메일: webmaster@catgang.com<br>
+                            개인정보보호책임자: 유비빔<br>
+                            ©catmung Inc. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="footer-contact">
+                        <p>
+                            고객센터: 1888-3010<br>
+                            운영시간: 평일 09:00 ~ 17:30<br>
+                            점심시간: 12:00 ~ 13:00<br>
+                            고객지원: 토, 일 / 공휴일 휴무<br>
+                            택배배송: 평일 오후 5시까지.<br>
+                            토요일 12시까지
+                        </p>
+                    </div>
+                </div>
+            </footer>
+            <!--/footer-->
+
+        </div>
+        <!-- /wrap-->
+    </body>
+
+</html>
