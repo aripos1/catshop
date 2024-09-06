@@ -1,52 +1,49 @@
 @charset "UTF-8";
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-}
 
-header {
+    
+
+#logo{
+    display: flex;
     text-align: center;
     margin-bottom: 20px;
 }
 
+#img {
+    max-width: 80px;
+    margin-inline: auto;
+}
+
 .content {
-    background-color: white;
+ 
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
     
 }
+
+#idcheck{
+margin-left: 100px;
+
+}
+#username{
+margin-left:200px ;    
+}
+
+
 
 #joinFormBox label{
     display: block;
     margin-bottom: 10px;
-    text-align: left;
-    font-weight: bold;
+    text-align: center;
+    font-weight: bold;;
 }
 
 #joinFormBox input{
-    display: block;
-    width: 800px;
+    width: 300px;
     margin-bottom: 15px;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-#loginFormBox label {
-    display: block;
-    margin-bottom: 10px;
-    text-align: left;
-    font-weight: bold;
-}
-
-#loginFormBox input {
-    display: block;
-    width: 800px;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    text-align: center;
 }
 
 #joinFormBox button{
@@ -60,6 +57,26 @@ header {
     cursor: pointer;
     text-align: center;
     }
+
+/*로그인창*/
+#loginFormBox label {
+   
+    display: block;
+    margin-bottom: 10px;
+    
+    text-align: center;
+    font-weight: bold;
+}
+
+#loginFormBox input {
+   
+    width: 300px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
 
 
 #loginFormBox button {
@@ -76,7 +93,7 @@ header {
 
 
 #loginFormBox .joinMsg{
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
