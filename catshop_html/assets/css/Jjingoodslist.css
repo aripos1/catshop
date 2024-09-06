@@ -1,24 +1,11 @@
 @charset "UTF-8";
-/* 여백 초기화 */
-body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, 
-input, fieldset, legend, p, select, table, th, td, tr,
-textarea, button, form {margin: 0; padding: 0;}
-
-body   {}
-
-ul, ol, li   {list-style-type: none; }
-a:link {text-decoration: none; color: #000000; }
-a:visited {text-decoration: none; color: #000000; }
-a:active {text-decoration: none; color: #000000; }
-a:hover {text-decoration: none; color: #000000; }
-
 
 /* 레이아웃 */
-#wrap{ margin: 0px auto; width: 1000px; background-color:#ebb4b4;}
-#title{ width: 1000px; border-bottom: 2px solid #000000;}
+#wrap{ margin: 0px auto; width: 1000px;}
+#title{ width: 1000px;}
 #content{width: 1000px; }
 #gallery{width: 1000px;}
-#pagingArea{width: 1000;}
+#pagingArea{width: 1000px;}
 
 
 /* 상단 페이지이름, 상품 총 갯수 */
@@ -26,31 +13,33 @@ a:hover {text-decoration: none; color: #000000; }
 #wrap #content #title #location #page_name{
     /* display: inline-block; */
     text-decoration: underline;
+    text-decoration-color: red;
     font-size: 25px;
-    background-color: aqua;
+    /* background-color: aqua; */
     margin: 10px 0 0 10px;
-    /* float: left; */
+    float: left;
     
 }
 
 #wrap #title #totalcount{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 
-    margin: 20px 0 0 10px;
-    /* float: left; */
+    margin: 16px 0 0 10px;
+    float: left;
     margin-right: 120px;
     
     
 }
 
 #viewArea{
-    background-color: blueviolet;
-    margin-top: 30px;
+    /* background-color: blueviolet; */
+    padding-top: 10px;
+
 }
 
 /* 이미지1개 영역 */
 #content .view{
-    background-color: coral;
+    /* background-color: coral; */
     width: 280px;
     height: 380px;
     margin: 5px 0px 10px 40px;
@@ -81,14 +70,16 @@ a:hover {text-decoration: none; color: #000000; }
 
 
 #pagingArea #paging{
-    width: 310px;
-    
+    background-color: cadetblue;
+
 }
 
 #paging ul{
-
-
-
+   background-color: chartreuse;
+    width: 310px;
+    margin-left: 345px;
+    padding: 20px 0px;
+    padding-left: 30px;
 }
 
 #paging ul>li{
