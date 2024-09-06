@@ -92,26 +92,35 @@ table tbody tr:nth-child(even) {
 /* 주문 상품 정보 스타일 */
 .orderGoods {
     margin-bottom: 20px;
+    
 }
 
 .orderGoods table {
+  
     border: 1px solid  #ddd;
     background-color: transparent;
 }
 
 .orderGoods td {
-    padding: 10px;
+    padding: 20px;
     border: none;
     font-size: 1.1em;
     line-height: 1.5;
 }
 
 /* 결제수단 스타일 */
-div {
+.payment {
+    padding: 20px;
     margin-bottom: 20px;
+    border: 1px solid  #ddd;
 }
 
-div p {
+.payment h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.payment p {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
