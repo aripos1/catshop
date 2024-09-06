@@ -17,7 +17,7 @@
     margin: 10px 0px 0px 10px;
     text-decoration: underline;
     text-decoration-color: #ffe2e2;
-    font-size: 25px;
+    font-size: px;
     
 }
 
@@ -38,7 +38,7 @@
 
 #wrap #content #sub_title #form-group #serch_text{
     float: right;
-    margin-right: 20px;
+    margin-right: 17px;
 }
 
 #wrap #content #sub_title #form-group #serch_text input{
@@ -83,6 +83,10 @@
     margin-left: 15px;
     border-radius: 3px;
     background-color:rgb(246, 221, 226);
+}
+
+#wrap #content #list-table table th{
+    background-color: rgb(252, 228, 216);
 }
 
 
