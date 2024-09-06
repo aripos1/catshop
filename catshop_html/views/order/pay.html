@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/impay.css" rel="stylesheet" type="text/css">
+
+    <title>상품결제</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="../main/index.html"><img src="../../assets/images/catprofile.jpg" alt="고양이 로고"></a>
+                <h1>냐옹아 멍멍해봐</h1>
+            </div>
+        </div>
+    </header>
+    <h1><a href=""> 상품결제 </a></h1>
+    <!-- 구매자 정보-->
+    <div class ="payUser">
+        <p>구매자 정보</p>
+        <caption>-------------------</caption>
+        <table>
+                <tr>
+                    <th>구매자</th>
+                    <td>임현성</td>
+                </tr>
+                <tr>
+                    <th>연락처</th>
+                    <td>01026690799</td>
+                </tr>
+        </table>
+        <caption>-------------------</caption>
+    </div>       
+
+    <!-- 받는 사람 정보-->
+    <div class ="recipient">
+        <p>받는 사람 정보</p>
+        <caption>-------------------</caption>
+        <table>
+                <tr>
+                    <th>받는 사람</th>
+                    <td>임현성</td>
+                </tr>
+                <tr>
+                    <th>연락처</th>
+                    <td>01026690799</td>
+                </tr>
+                <tr>
+                    <th>주소</th>
+                    <td>(01071) 서울특별시 강북구 한천로139나길 12-111 ( 수유동 )</td>
+                </tr>
+        </table>
+        <caption>-------------------</caption>
+    </div>       
+    <div class="orderGoods">
+        <table>
+                <tr>
+                    <td>상품 A <br> 옵션 : 부들부들푸딩 <br> 9/25일 배송 예정</td>
+                </tr>
+                <tr>
+                    <td>상품 B <br> 옵션 : 부들부들푸딩 <br> 9/25일 배송 예정</td>
+                </tr>
+        </table>
+    </div>  
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>주문금액</th>
+                <th>할인</th>
+                <th>배송비</th>
+                <th>총액</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>50,000원</td>
+                <td>0원</td>
+                <td>3,000원</td>
+                <td>53,000원</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    
+    <div>
+        <p>결제수단</p>
+        <input type="radio" name="payment" >신용카드
+        <input type="radio" name="payment" >계좌이체
+    </div>
+    <br>
+
+    <div class="parent-container"></div>
+        <button class="btn" onclick="history.back()">뒤로가기</button>
+        <button class="btn" onclick="">결제하기</button>
+    </div>
+
+</body>
+</html>
