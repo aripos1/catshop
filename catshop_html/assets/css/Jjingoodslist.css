@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* 여백 초기화 */
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, 
+input, fieldset, legend, p, select, table, th, td, tr,
+textarea, button, form {margin: 0; padding: 0;}
+
+body   {}
+
+ul, ol, li   {list-style-type: none; }
+a:link {text-decoration: none; color: #000000; }
+a:visited {text-decoration: none; color: #000000; }
+a:active {text-decoration: none; color: #000000; }
+a:hover {text-decoration: none; color: #000000; }
+
+
+/* 레이아웃 */
+#wrap{ margin: 0px auto; width: 1000px; background-color:#ebb4b4;}
+#title{ width: 1000px; border-bottom: 2px solid #000000;}
+#content{width: 1000px; }
+#gallery{}
+
+
+/* 상단 페이지이름, 상품 총 갯수 */
+
+#wrap #title #page_name{
+    border-bottom: 2px solid #000000;
+    font-size: 25px;
+    background-color: aqua;
+    margin: 10px 0 0 10px;
+    /* float: left; */
+    
+}
+
+#wrap #title #totalcount{
+    background-color: aquamarine;
+
+    margin: 20px 0 0 10px;
+    /* float: left; */
+    margin-right: 120px;
+    
+    
+}
+
+#viewArea{
+    background-color: blueviolet;
+    margin-top: 30px;
+}
+
+/* 이미지1개 영역 */
+#content .view{
+    background-color: coral;
+    width: 280px;
+    height: 380px;
+    margin: 5px 0px 10px 40px;
+    float: left;
+    border: 2px solid #000000;
+}
+
+#gallery #viewArea .view .imgItem{
+    width: 250px;
+    height: 260px;
+    margin: 10px 10px 7px 15px;
+}
+
+#gallery #viewArea .view .imgName{
+    text-align: center;
+}
+
+#gallery #viewArea .view .imgContent{
+    text-align: center;
+}
+#gallery #viewArea .view .imgPrice{
+    text-align: center;
+}
+
+
+
+/* 페이징 */
+#paging{
+    width: 310px;
+    
+    
+}
+
+#paging ul{
+    margin-left: 60px;
+}
+
+#paging ul>li{
+    float: left;
+    
+    margin: 5px;
+    
+}
