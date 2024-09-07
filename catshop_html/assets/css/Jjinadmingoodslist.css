@@ -2,8 +2,8 @@
 
 #content{width: 100%;}
 #wrap{ margin: 0px auto; width: 1000px;}
-#sub_title{width: 1000px;}
-#list-table{width: 1000px;}
+#sub_title{width: 1000px; padding-top: 20px; border-bottom: 3px solid #e3e3e3;}
+#list-table{width: 1000px; padding-top: 20px;}
 #pagingArea{width: 1000px;}
 
 /* 상단 타이틀 부분(검색창) */
@@ -15,8 +15,8 @@
 #wrap #content #sub_title #name_title h1{
     float: left;
     margin: 10px 0px 0px 10px;
-    text-decoration: underline;
-    text-decoration-color: #ffe2e2;
+    /* text-decoration: underline; */
+    /* text-decoration-color: #ffe2e2; */
     font-size: px;
     
 }
