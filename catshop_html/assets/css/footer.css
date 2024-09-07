@@ -17,8 +17,10 @@ footer {
 }
 
 .footer-logo img {
-    width: 60px; /* 이미지 크기 약간 확대 */
-    height: auto; /* 비율 유지하면서 크기 조절 */
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 .footer-info, .footer-contact {
