@@ -27,27 +27,18 @@
     
 
 
-#logo{
-    display: flex;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
 
-#img {
-    max-width: 80px;
-    margin-inline: auto;
-}
 
 .content {
- 
-    padding: 20px;
-    border-radius: 8px;
-
-    
+    margin-left: 220px;
+    padding: 10px;
 }
 
-
+.content h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: left;
+}
 
 #joinFormBox label{
     display: block;

@@ -5,19 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원정보수정</title>
     <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/header.css">
     <link rel="stylesheet" href="../../assets/css/hdrupdate.css">
     <link rel="stylesheet" href="../../assets/css/footer.css">
 </head>
 
 <body>
     <div id="wrap">
-        <div id="logo">
-            <img id="img" src="../../assets/images/logo.png" alt="고양이 로고">
+    <!-- 헤더 섹션 -->
+    <header id ="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="../../assets/images/Layer 1.png" alt="고양이 로고">
+                <h1>냐옹아 멍멍해봐</h1>
+            </div>
+        
+            <!-- 비회원 
+            <div class="menu">
+                <button>로그인</button>
+                <button>회원가입</button>
+            </div>
+            -->
+            <!-- 회원    -->
+            <div class="menu">
+                <P>집사님 어서오세요.</P>
+                <button>마이페이지</button>
+                <button>로그아웃</button>
+            </div>
+          
+            <!-- 관리자 
+            <div class="menu">
+                <P>관리자님 어서오세요.</P>
+                <button>상품등록</button>
+                <button>상품관리</button>
+                <button>주문관리</button>
+                <button>로그아웃</button>
+            </div>
+       -->
+            <br>
+            <div class="search">
+                <input type="text" placeholder="문자열을 검색하세요!">
+                <button class="search-btn">🔍</button>
+            </div>
         </div>
-        <h2>회원정보수정</h2>
+        
+        <div class="nav-menu">
+            <ul>
+                <li><h2>사료</h2></li>
+                <li><a href="#">성인묘</a></li>
+                <li><a href="#">아가묘</a></li>
+                <li><h2>간식</h2></li>
+                <li><a href="#">캔</a></li>
+                <li><a href="#">츄르</a></li>
+            </ul>
+        </div>
 
-    <div class="content">
-        <div id="container" class="clearfix">
+    </header>
+    <div id="container" class="clearfix">
+  
   
             <!-- 왼쪽 사이드바 -->
                 <div class="sidebar">
@@ -25,8 +70,12 @@
                     <a href="#">주문 목록</a>
                     <a href="#">회원 정보</a>
                 </div>
+
+ <div class="content">
+      <h1>회원정보수정</h1>
+
          <form>
-        <div id="joinFormBox">
+         <div id="joinFormBox">
             <label for="username">아이디</label>
             <input type="text" id="username" placeholder="수정 불가" required>
 
@@ -47,13 +96,14 @@
 
             <br><!--입력버튼 아래로 하려고-->
             <button type="submit">입력 완료</button>
+        </div>
         </form>
     </div>
-        
+    
         <footer>
             <div class="footer-container">
                 <div class="footer-logo">
-                    <img src="/catprofile.jpg" alt="고양이 로고">
+                    <img src="../../assets/images/Layer 1.png" alt="고양이 로고">
                 </div>
                 <div class="footer-info">
                     <p>
@@ -78,7 +128,6 @@
                 </div>
             </div>
        </footer>
-    </div>
-    
+ 
 </body>
 </html>
