@@ -232,7 +232,6 @@ body {
 
 .review-body {
     display: flex;
-    margin-top: 10px;
 }
 
 .review-body img {
@@ -243,6 +242,7 @@ body {
 }
 
 .review-body .review-text {
+    text-align: left;
     flex-grow: 1;
     color: #333;
 }

@@ -94,10 +94,11 @@
                 총 주문 금액: 29,900원
             </div>
             <!--------->
-
             <!-- 장바구니 버튼 (장바구니 페이지 링크 추가)-->
             <button class="add-to-cart-button">장바구니에 추가</button>
+            <button class="add-to-cart-button">구매</button>
             <!--------->
+        
         </div>
     </div>
 
@@ -116,26 +117,23 @@
     <div class="review-container">
         
         <button class="delete-btn">삭제</button>
-
         <!-- 리뷰 -->
-        <div class="review-header">
-            <div class="review-info">
-                <span class="stars" name="변경x">★★★★☆</span>
-                <span class="verified" name="변경x">구매인증됨</span>
-                <span class="date" name="등록일">2024.09.05</span><br>
-                <span>이*현 · 코리안 숏헤어 · 2살</span>
-            </div>
-        </div>
+        
         <!--------->
-
         <!-- Review Body -->
+        <form class="review-content">
         <div class="review-body">
             <img src="https://via.placeholder.com/100" alt="product-image">
             <div class="review-text">
-                <strong>재구매</strong><br>
-                잘먹어요, 헤어볼에 도움이 되기를 바래요.
+                <br>
+                <span class="name">이*현</span>
+                <span class="stars" name="변경x">★★★★☆</span>
+                <span class="verified" name="변경x">구매인증됨</span>
+                <span class="date" name="등록일">2024.09.05</span><br><br><br>
+                <span class="content">잘먹어요, 헤어볼에 도움이 되기를 바래요.</span>
             </div>
         </div>
+    </form>
 
     <script>
         // Toggle between product details and reviews
