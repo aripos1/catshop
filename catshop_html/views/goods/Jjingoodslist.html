@@ -17,11 +17,11 @@
     <body>
         <div id="wrap">
             <!--header 부분-->
-            <header>
+            <header id="header">
                 <div class="header-container">
                     <div class="logo">
                         <img src="../../assets/images/Layer 1.png" alt="고양이 로고">
-                        <h1>냐옹아 멍멍해봐</h1>
+                        <h1>야옹이 멍멍해봐</h1>
                     </div>
                     <div class="search">
                         <input type="text" placeholder="문자열을 검색하세요!">
@@ -51,8 +51,16 @@
                 <!-- 상단-->
                 <div id="title">
                     <div id="location" class="clearfix">
-                        <h1 id="page_name"> AdultFood </h1>
+                        <h1 id="page_name"><a href=""> AdultFood </a></h1>
                         <p id="totalcount"> 상품 42개 </p>
+                    </div>
+                    <div id="title-dec">
+                        <ul class="clearfix">
+                            <li>fooder-Adult(category)</li>
+                            <li class="main-titletext">|</li>
+                            <li class="main-titletext"><a href="">HOME</a></li>
+                        </ul>
+
                     </div>
                 </div>
 
@@ -61,12 +69,14 @@
                 <div id="gallery">
                     <ul id="viewArea" class="clearfix">
                         <li>
-                            <div class="view">
-                                <img class="imgItem" src="../../assets/images/logo.png">
-                                <div class="imgName">상품이름(name)</div>
-                                <div class="imgContent">상품설명(comtent)</div>
-                                <div class="imgPrice">가격(price)</div>
-                            </div>
+                            <a href="">
+                                <div class="view">
+                                    <img class="imgItem" src="../../assets/images/logo.png">
+                                    <div class="imgName">상품이름(name)</div>
+                                    <div class="imgContent">상품설명(content)</div>
+                                    <div class="imgPrice">가격(price)</div>
+                                </div>
+                            </a>
                         </li>
                         <li>
                             <div class="view">
@@ -117,8 +127,8 @@
                 <div id="pagingArea">    
                     <div id="paging">
                         <ul class="clearfix">
-                            <li class="page_move">◀</li>
-                            <li>1</li>
+                            <li class="page_move"><a href="">◀</a></li>
+                            <li><a href="">1</a></li>
                             <li>2</li>
                             <li>3</li>
                             <li>4</li>
@@ -128,7 +138,7 @@
                             <li>8</li>
                             <li>9</li>
                             <li>10</li>
-                            <li class="page_move">▶</li>
+                            <li class="page_move"><a href="">▶</a></li>
                         </ul>
                     </div>
                 </div>
@@ -138,54 +148,35 @@
             <!-- /content-->
 
             <!-- 푸터-->
-            <div class="footer-container">
-                <div class="footer-logo">
-                    <img src="/catprofile.jpg" alt="고양이 로고">
+            <footer>    
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img src="/catprofile.jpg" alt="고양이 로고">
+                    </div>
+                    <div class="footer-info">
+                        <p>
+                            (주)냐옹아 멍멍해봐 | 대표이사: 김덕배<br>
+                            서울시 강남대로 40번지 통영빌딩 32층<br>
+                            사업자 등록번호: 887-87-00578<br>
+                            통신판매업 신고: 2017-서울특별시-00808호<br>
+                            ©catmung Inc. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="footer-contact">
+                        <p>
+                            고객센터: 1888-3010<br>
+                            운영시간: 평일 09:00 ~ 17:30<br>
+                            점심시간: 12:00 ~ 13:00<br>
+                            고객지원: 토, 일 / 공휴일 휴무<br>
+                        </p>
+                    </div>
                 </div>
-                <div class="footer-info">
-                    <p>
-                        (주)냐옹아 멍멍해봐 | 대표이사: 김덕배<br>
-                        서울시 강남대로 40번지 통영빌딩 32층<br>
-                        사업자 등록번호: 887-87-00578<br>
-                        통신판매업 신고: 2017-서울특별시-00808호<br>
-                        이메일: webmaster@catgang.com<br>
-                        개인정보보호책임자: 유비빔<br>
-                        ©catmung Inc. All Rights Reserved.
-                    </p>
-                </div>
-                <div class="footer-contact">
-                    <p>
-                        고객센터: 1888-3010<br>
-                        운영시간: 평일 09:00 ~ 17:30<br>
-                        점심시간: 12:00 ~ 13:00<br>
-                        고객지원: 토, 일 / 공휴일 휴무<br>
-                        택배배송: 평일 오후 5시까지.<br>
-                        토요일 12시까지
-                    </p>
-                </div>
-            </div>
+            </footer>
             <!-- /푸터-->
 
         </div>
         <!-- /wrap -->
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </body>
 </html>
