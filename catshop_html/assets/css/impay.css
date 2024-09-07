@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffcccb;
+    background-color:   white;
     padding: 10px 20px;
 }
 
@@ -30,11 +30,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+
 }
-
-
-
 
 /* 페이지 제목 스타일 */
 h1 {
