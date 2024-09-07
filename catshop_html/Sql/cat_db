@@ -125,8 +125,18 @@ select * from receipt;
 
 ###### 테스트값 넣기 #########
 insert into user
-values(null, '진소영', 'dragon', '1233', '서울시', '010-1111-1111', 0, '맛있네용')
+values(null, '진소영', 'jjin', '1233', '서울시', '010-1111-1111', 0, '맛있네용')
 ;
+insert into user
+values(null, '박지민', 'prak', '1233', '서울시', '010-1111-1111', 0, '맛있네용')
+;
+insert into user
+values(null, '임현성', 'king', '1233', '서울시', '010-1111-1111', 0, '맛있네용')
+;
+insert into user
+values(null, '황덕룡', 'dragon', '1233', '서울시', '010-1111-1111', 0, '맛있네용')
+;
+
 
 insert into goods
 values(null, 'kitten', 'ciao', '연어맛,참치맛 등 칼슘 퐝퐝', 3000, now(), '참치맛', 1)
