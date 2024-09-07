@@ -1,5 +1,24 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'Paperlogy-8ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Tenada';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HSSanTokki20-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/HSSanTokki20-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
 #header {
     /* background-color:  white; */
@@ -30,6 +49,7 @@
     font-size: 24px;
     color: #333;
     vertical-align: middle;
+    font-family: 'HSSanTokki20-Regular';
 }
 
 .menu {
@@ -42,6 +62,8 @@
     color: #555;
     margin-right: 10px;
     display: inline-block;
+
+
 }
 
 .menu button {
