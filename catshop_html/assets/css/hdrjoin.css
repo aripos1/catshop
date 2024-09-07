@@ -25,12 +25,11 @@
 
 
 #username {
-    width: 100%  /* 입력창 너비 */
-    padding-left: 100px; /* 자동 마진 제거 */
+   margin-left: 260px;
 }
 
 #idcheck {
-    margin-left: 150px; /* 버튼과 입력창 사이 간격 */
+    margin-right: 150px; /* 버튼과 입력창 사이 간격 */
     width: 20%; /* 버튼 너비 */
 }
 
