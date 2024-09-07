@@ -1,0 +1,144 @@
+## ////////////////////////////////////////  쇼핑몰   ///////////////////////////////////////////////////
+
+######################################################
+#################### cat_db 계정생성 ###################
+
+
+drop user 'cat'@'%';
+
+create user 'cat'@'%' identified by 'cat';
+
+grant all privileges on cat_db.* to 'cat'@'%';
+
+flush privileges;
+
+
+#######################################################
+###################### cat_db DB생성 ###################
+
+
+drop database cat_db;
+
+create database cat_db
+   default character set utf8mb4
+    collate utf8mb4_general_ci
+    default encryption='n'
+;
+
+show databases;
+
+
+use cat_db;
+
+#########################################################
+
+
+
+###################### cat table 생성 ####################
+
+ ############# 회원 table ##############
+use cat_db;
+drop table user;
+
+create table user (
+     user_no    integer		primary key	auto_increment
+    ,name		varchar(10)
+    ,id			varchar(20)
+    ,password	varchar(20)
+    ,adress		varchar(50)
+    ,hp			varchar(30)
+    ,roll		boolean
+	,content	varchar(500)
+);
+
+ ############# 상품 table ##############
+use cat_db;
+drop table goods;
+
+create table goods(
+	 goods_no	integer	primary key not null auto_increment
+    ,category	varchar(100)
+    ,name		varchar(50)
+	,content	varchar(500)
+    ,price		int
+    ,reg_date	datetime not null
+    ,taste		varchar(50)
+	,user_no	int,
+    
+    FOREIGN KEY (user_no) REFERENCES user(user_no)
+);
+
+ ############# 사진 table ##############
+use cat_db;
+drop table gallery;
+
+create table gallery(
+	 gallery_no	integer	primary key	not null auto_increment
+    ,save_name	varchar(500)
+    ,file_path	varchar(500)
+    ,goods_no	int,
+    
+    FOREIGN KEY (goods_no) REFERENCES goods(goods_no)
+);
+
+############# 장바구니 table ##############
+use cat_db;
+drop table shopping;
+
+create table shopping(
+	 basket_no	integer	primary	key not null auto_increment
+    ,count			int
+	,price			int
+    ,total_price	int
+    ,taste			varchar(50)
+    ,user_no		int
+    ,goods_no		int,
+
+    FOREIGN KEY (user_no) REFERENCES user(user_no)
+    ,FOREIGN KEY (goods_no) REFERENCES goods(goods_no)
+);
+    
+############# 영수증 table ##############
+
+use cat_db;
+drop table receipt;
+
+create table receipt(
+	 receipt_no	integer	primary key	not null auto_increment
+    ,exp			varchar(50)
+    ,total_price	int
+    ,payment_date	datetime not null
+    ,user_no		int
+    ,basket_no	int,
+    
+    FOREIGN KEY (user_no) REFERENCES user(user_no)
+    ,FOREIGN KEY (basket_no) REFERENCES shopping(basket_no)
+);
+
+
+
+select * from user;
+select * from goods;
+select * from gallery;
+select * from shopping;
+select * from receipt;
+
+###### 테스트값 넣기 #########
+insert into user
+values(null, '진소영', 'dragon', '1233', '서울시', '010-1111-1111', 0, '맛있네용')
+;
+
+insert into goods
+values(null, 'kitten', 'ciao', '연어맛,참치맛 등 칼슘 퐝퐝', 3000, now(), '참치맛', 1)
+;
+
+insert into gallery
+values(null, '캔예쁜 사진', 'file-path', 2 )
+;
+
+insert into shopping
+values(null, 100 , 3000 , 50000 , '참치맛', 1, 1)
+;
+
+insert into receipt
+values(null, '배송중', 358000, now(), 1, 1 );
