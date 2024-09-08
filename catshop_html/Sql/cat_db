@@ -46,7 +46,7 @@ create table user (
     ,id			varchar(20)
     ,password	varchar(20)
     ,adress		varchar(50)
-    ,hp			varchar(30)
+    ,hp			varchar(30)  
     ,roll		boolean
 	,content	varchar(500)
 );
